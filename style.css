@@ -1,0 +1,26 @@
+.options, .muestreo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    flex-direction: row;
+}
+.box{
+    display: flex;
+    width: 120px;
+    height: 100px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    transition: all 0.5s ease;
+    border-color: black;
+    border: solid 1px;
+}

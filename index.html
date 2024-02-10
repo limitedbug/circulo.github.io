@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Círculo Cambiante</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <div class="box">
+                <label for="color">Color :</label><br>
+                <input id="color" type="color" onchange="cambiarcolor(this.value)">
+            </div>
+            <div class="box">
+                <button onclick="magia(this)">Desaparecer </button>
+            </div>
+            <div class="box">
+                <p>Altura :</p><br>
+                <div class="botones">
+                    <button onclick="agrandaraltura()">+</button>
+                    <button onclick="disminuiraltura()">-</button>
+                </div>
+            </div>
+            <div class="box">
+                <p>Anchura :</p><br>
+                <div class="botones">
+                    <button onclick="agrandaranchura()">+</button>
+                    <button onclick="disminuiranchura()">-</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="muestreo">
+            <div id="circle"></div>
+        </div>
+    </div>
+<script src="index.js"></script>
+
+</body>
+</html>
